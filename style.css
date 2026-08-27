@@ -174,20 +174,71 @@ a {
 
     position: relative;
 
+    overflow: hidden;
+
+    background: #111814;
+}
+
+
+.hero-image {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: 0;
+
+    filter: brightness(0.55);
+}
+
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
     background:
         linear-gradient(
             90deg,
-            rgba(17, 24, 20, 0.98) 0%,
-            rgba(17, 24, 20, 0.82) 45%,
-            rgba(17, 24, 20, 0.35) 100%
-        ),
-        radial-gradient(
-            circle at 80% 45%,
-            rgba(70, 102, 82, 0.28),
-            transparent 45%
+            rgba(17, 24, 20, 0.92) 0%,
+            rgba(17, 24, 20, 0.65) 45%,
+            rgba(17, 24, 20, 0.25) 100%
         );
+
+    z-index: 1;
 }
 
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+    left: 8%;
+
+    width: 84%;
+    height: 1px;
+
+    background: var(--border);
+
+    z-index: 2;
+}
+
+
+.hero-content {
+    position: relative;
+
+    z-index: 3;
+
+    max-width: 750px;
+}
 
 .hero::after {
     content: "";
