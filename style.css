@@ -185,8 +185,8 @@ a {
 
     inset: 0;
 
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 400px;
 
     object-fit: cover;
 
@@ -814,17 +814,3 @@ footer a:hover {
 
         text-align: center;
     }
-
-   .hero > img {
-  width: 50%;
-  height: 450px;
-  object-fit: cover;
-  display: block;
-}
-}
-
-.hero img {
-    width: 45% !important;
-    height: 400px !important;
-    object-fit: cover;
-}
