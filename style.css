@@ -814,3 +814,9 @@ footer a:hover {
 
         text-align: center;
     }
+.hero > img {
+    width: 40%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
