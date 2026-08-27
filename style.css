@@ -822,3 +822,9 @@ footer a:hover {
   display: block;
 }
 }
+
+.hero img {
+    width: 45% !important;
+    height: 400px !important;
+    object-fit: cover;
+}
